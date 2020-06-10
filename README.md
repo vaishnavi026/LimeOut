@@ -26,7 +26,7 @@ German Dataset([Random Forest Classifier](https://github.com/vaishnavi026/LimeOu
 [Logistic Regression](https://github.com/vaishnavi026/LimeOut/blob/master/German_Logistic_Regression.ipynb)). These results are
 further discussed in the paper.
 
-# Dependencies
+## Dependencies
 * Python >= 3.7
 * Scikit-learn >= 0.20.3 (the oldest version where it works)
 
