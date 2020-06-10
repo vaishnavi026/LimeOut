@@ -1,6 +1,6 @@
 # LimeOut
 The project aims to tackle process fairness for Machine Learning Models, while improving (or at-least maintaining) the accuracy.
-**LimeOut** has two major components :LIME<sub>Global</sub> and the ensemble.
+**LimeOut** has two major components :LIME<sub>Global</sub> and the ENSEMBLE<sub>Out</sub>.
 Note that here explanations are in the form of top important features used by the model, while making predictions. (We focused
 only on top-10 features, however this hyperparameter may vary as per the use case.)
 
@@ -10,7 +10,7 @@ After obtaining the LIME<sub>Global</sub> explanations, if the sensitive feature
 classifier is considered as unfair, and we move on to second component of LimeOut. Otherwise, the classifier is deemed to be 
 fair and no action is taken.
 
-## Ensemble
+## ENSEMBLE<sub>Out</sub>
 This is the core component of the LimeOut. Given the most important features, LimeOut produces a pool of classifiers using 
 feature-drop (removing feature from training set). Each of these classifiers does not depend on the corresponding sensitive 
 features. It then constructs an ensemble using this pool of classifiers. Following a human and context-centered approach, the 
