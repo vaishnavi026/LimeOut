@@ -8,7 +8,7 @@ only on top-10 features, however this hyperparameter may vary as per the use cas
 We propose LIME<sub>Global</sub> to obtain global explanations for the ML classifiers. LIME<sub>Global</sub> uses 'submodular pick' approach to select the instances, which provide diverse and non-redundant set of LIME explanations. We used these instances to derive the global explanations. We used the LIME implementation (as implemented [here](https://github.com/marcotcr/lime/)) with minor modifications. 
 After obtaining the LIME<sub>Global</sub> explanations, if the sensitive features are among the most imporatant, then the 
 classifier is considered as unfair, and we move on to second component of LimeOut. Otherwise, the classifier is deemed to be 
-fair and no action is taken,
+fair and no action is taken.
 
 ## Ensemble
 This is the core component of the LimeOut. Given the most important features, LimeOut produces a pool of classifiers using 
