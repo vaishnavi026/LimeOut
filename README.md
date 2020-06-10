@@ -11,7 +11,7 @@ classifier is considered as unfair, and we move on to second component of LimeOu
 fair and no action is taken.
 
 ## ENSEMBLE<sub>Out</sub>
-This is the core component of the LimeOut. Given the most important features, LimeOut produces a pool of classifiers using 
+This is the core component of the LimeOut. Given the most important features, ENSEMBLE<sub>Out</sub> produces a pool of classifiers using 
 feature-drop (removing feature from training set). Each of these classifiers does not depend on the corresponding sensitive 
 features. It then constructs an ensemble using this pool of classifiers. Following a human and context-centered approach, the 
 choice of sensitive features is left to the user within the given context. 
