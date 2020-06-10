@@ -1,5 +1,5 @@
 # LimeOut
-The project aims to tackle process fairness for Machine Learning Models, while improving (or at-least maintaining) the accuracy
+The project aims to tackle process fairness for Machine Learning Models, while improving (or at-least maintaining) the accuracy.
 **LimeOut** has two major components :LIME<sub>Global</sub> and the ensemble.
 Note that here explanations are in the form of top important features used by the model, while making predictions. (We focused
 only on top-10 features, however this hyperparameter may vary as per the use case.)
